@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Latihan Box Shadow</title>
+	<style type="text/css">
+		
+		div {
+			width: 300px;
+			height: 300px;
+			background-color: #39b54a;
+			margin: 50px auto;
+			/*value 1 = x-offset, value 2=y-offset, value 3=blur, value 4=spread/size, value 5=warna*/
+			/*inset = membuat bayangan kedalam*/
+			box-shadow: 5px 5px 5px rgba(255,0,0,0.5),
+				-5px -5px 5px rgba(0,0,255,0.5);
+			transition: 0.3s;
+		}
+
+		div:hover{
+			box-shadow: 0px 80px 10px -40px rgba(0,0,0,0.15);
+			margin-top: 30px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>

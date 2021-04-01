@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Galeri Lightbox</title>
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<h1>Kuroko No Basket</h1>
+
+	<div class="container">
+		
+		<ul class="galeri">
+			<li>
+				<a href="#gambar-1">
+					<img src="img/thumbs/akashi.png" alt="Akashi Seijuro">
+					<span>Akashi Seijuro</span>
+				</a>
+
+				<div class="overlay" id="gambar-1">
+				<a href="#" class="close">Close</a>
+
+					<a href="#gambar-2" class="prev"><img src="img/prev.png"></a>
+					<img src="img/full/akashi.png">
+					<a href="#gambar-2" class="next"><img src="img/next.png"></a>
+
+				</div>
+
+			</li>
+
+
+			<li>
+				<a href="#gambar-2">
+					<img src="img/thumbs/shintaro.png" alt="Shintaro Midorima">
+					<span>Shintaro Midorima</span>
+				</a>
+
+				<div class="overlay" id="gambar-2">
+				<a href="#" class="close">Close</a>
+					<a href="#gambar-1" class="prev">Prev</a>
+
+					<a href="#gambar-1" class="prev"><img src="img/prev.png"></a>
+					<img src="img/full/shintaro.png">
+					<a href="#gambar-1" class="next"><img src="img/next.png"></a>
+
+				</div>
+			</li>
+
+			<div class="clear"></div>
+		</ul>
+
+	</div>
+
+</body>
+</html>

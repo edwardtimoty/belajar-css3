@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Transition</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 900px;
+			margin: 10px auto;
+			border: 5px solid black;
+		}
+
+		.kotak {
+			/*Transition  = mengubah nilai dari properti HTML secara halus
+			sintaks : transition(properti durasi fungsi delay)*/
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			text-align: center;
+			line-height: 100px;
+			margin: 5px 0;
+		}
+
+		.kotak1 {
+			transition: all 1s ease;
+		}
+
+		.kotak2 {
+			transition: all 1s ease-in;
+		}
+
+		.kotak3 {
+			transition: all 1s ease-out;
+		}
+
+		.kotak4 {
+			transition: all 1s ease-in-out;
+		}
+
+		.kotak5 {
+			transition: all 1s linear;
+		}
+
+		.kotak6 {
+			transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+		}
+
+		.container:hover .kotak {
+			transform: rotate(720deg);
+			margin-left: 800px;
+			background-color: royalblue;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="kotak kotak1">Ease</div>
+		<div class="kotak kotak2">Ease-in</div>
+		<div class="kotak kotak3">Ease-out</div>
+		<div class="kotak kotak4">Ease-in-out</div>
+		<div class="kotak kotak5">Linear</div>
+		<div class="kotak kotak6">Cubic-bezier</div>
+
+	</div>
+	
+</body>
+</html>

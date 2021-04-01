@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Latihan Animation</title>
+	<style type="text/css">
+		
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			/*sintaks
+			animation :
+			name duration timing-function delay iteration-count(angka | infinite) direction(normal | reverse | alternate | alternate-reverse) fill-mode(none | forwards | backwards | both) play-state(running | paused)
+			*/
+			animation: animasi_kotak 2s ease infinite alternate; 
+		}
+
+		@keyframes animasi_kotak {
+			0% {
+				width: 200px;
+			}
+
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+
+			100% {
+
+				width: 500px;
+				height: 500px;
+			}
+		} 
+
+	</style>
+</head>
+<body>
+
+<div class="kotak"></div>
+
+
+</body>
+</html>
